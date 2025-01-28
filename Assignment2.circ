@@ -37,13 +37,17 @@
     <sep/>
     <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
-      <a name="facing" val="west"/>
+      <a name="facing" val="north"/>
       <a name="output" val="true"/>
     </tool>
     <sep/>
     <tool lib="1" name="NOT Gate"/>
-    <tool lib="1" name="AND Gate"/>
-    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="AND Gate">
+      <a name="facing" val="south"/>
+    </tool>
+    <tool lib="1" name="OR Gate">
+      <a name="facing" val="south"/>
+    </tool>
     <tool lib="1" name="XOR Gate"/>
     <tool lib="1" name="NAND Gate"/>
     <tool lib="1" name="NOR Gate"/>
@@ -56,8 +60,13 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="8" loc="(105,45)" name="Text">
+    <comp lib="8" loc="(15,40)" name="Text">
+      <a name="halign" val="left"/>
       <a name="text" val="TCSS371 Assignment 2"/>
+    </comp>
+    <comp lib="8" loc="(15,70)" name="Text">
+      <a name="halign" val="left"/>
+      <a name="text" val="Raiden H"/>
     </comp>
   </circuit>
   <circuit name="Problem1A">
@@ -190,57 +199,100 @@
       <a name="inputs" val="10"/>
       <a name="size" val="70"/>
     </comp>
-    <comp lib="8" loc="(219,69)" name="Text">
+    <comp lib="8" loc="(1205,150)" name="Text">
+      <a name="text" val="TRUTH TABLE"/>
+    </comp>
+    <comp lib="8" loc="(1211,385)" name="Text">
+      <a name="text" val="1   |   0   |   0   |   0   |   I"/>
+    </comp>
+    <comp lib="8" loc="(1213,321)" name="Text">
+      <a name="text" val="0   |   1   |   0   |   1   |   F"/>
+    </comp>
+    <comp lib="8" loc="(1213,364)" name="Text">
+      <a name="text" val="0   |   1   |   1   |   1   |   H"/>
+    </comp>
+    <comp lib="8" loc="(1214,344)" name="Text">
+      <a name="text" val="0   |   1   |   1   |   0   |   G"/>
+    </comp>
+    <comp lib="8" loc="(1214,405)" name="Text">
+      <a name="text" val="1   |   0   |   0   |   1   |   J"/>
+    </comp>
+    <comp lib="8" loc="(1215,190)" name="Text">
+      <a name="text" val="S3  |  S2  |  S1  |  S0  |  OUT"/>
+    </comp>
+    <comp lib="8" loc="(1215,210)" name="Text">
+      <a name="text" val="0   |   0   |   0   |   0   |   A"/>
+    </comp>
+    <comp lib="8" loc="(1215,235)" name="Text">
+      <a name="text" val="0   |   0   |   0   |   1   |   B"/>
+    </comp>
+    <comp lib="8" loc="(1215,255)" name="Text">
+      <a name="text" val="0   |   0   |   1   |   0   |   C"/>
+    </comp>
+    <comp lib="8" loc="(1215,275)" name="Text">
+      <a name="text" val="0   |   0   |   1   |   1   |   D"/>
+    </comp>
+    <comp lib="8" loc="(1215,299)" name="Text">
+      <a name="text" val="0   |   1   |   0   |   0   |   E"/>
+    </comp>
+    <comp lib="8" loc="(1216,427)" name="Text">
+      <a name="text" val="1   |   0   |   1   |   0   |   0"/>
+    </comp>
+    <comp lib="8" loc="(1216,449)" name="Text">
+      <a name="text" val="1   |   0   |   1   |   1   |   0"/>
+    </comp>
+    <comp lib="8" loc="(215,65)" name="Text">
       <a name="text" val="8"/>
     </comp>
-    <comp lib="8" loc="(259,69)" name="Text">
+    <comp lib="8" loc="(255,65)" name="Text">
       <a name="text" val="4"/>
     </comp>
-    <comp lib="8" loc="(300,69)" name="Text">
+    <comp lib="8" loc="(300,65)" name="Text">
       <a name="text" val="2"/>
     </comp>
     <comp lib="8" loc="(310,20)" name="Text">
       <a name="text" val="10-to-1 MUX with only AND, OR, and NOT. Label I/O and provide a truth table."/>
     </comp>
-    <comp lib="8" loc="(338,68)" name="Text">
+    <comp lib="8" loc="(335,65)" name="Text">
       <a name="text" val="1"/>
     </comp>
-    <comp lib="8" loc="(537,97)" name="Text">
+    <comp lib="8" loc="(535,95)" name="Text">
       <a name="text" val="Supports selectors from 0000 to 1001"/>
     </comp>
-    <comp lib="8" loc="(562,123)" name="Text">
+    <comp lib="8" loc="(560,120)" name="Text">
       <a name="text" val="S3 is the most significant bit, S0 is the least"/>
     </comp>
-    <comp lib="8" loc="(67,813)" name="Text">
-      <a name="text" val="0111"/>
-    </comp>
-    <comp lib="8" loc="(67,989)" name="Text">
-      <a name="text" val="1001"/>
-    </comp>
-    <comp lib="8" loc="(68,741)" name="Text">
-      <a name="text" val="0110"/>
-    </comp>
-    <comp lib="8" loc="(68,903)" name="Text">
-      <a name="text" val="1000"/>
-    </comp>
-    <comp lib="8" loc="(69,499)" name="Text">
+    <comp lib="8" loc="(65,495)" name="Text">
       <a name="text" val="0011"/>
     </comp>
-    <comp lib="8" loc="(69,577)" name="Text">
+    <comp lib="8" loc="(65,575)" name="Text">
       <a name="text" val="0100"/>
     </comp>
-    <comp lib="8" loc="(70,422)" name="Text">
+    <comp lib="8" loc="(65,740)" name="Text">
+      <a name="text" val="0110"/>
+    </comp>
+    <comp lib="8" loc="(65,810)" name="Text">
+      <a name="text" val="0111"/>
+    </comp>
+    <comp lib="8" loc="(65,900)" name="Text">
+      <a name="text" val="1000"/>
+    </comp>
+    <comp lib="8" loc="(65,985)" name="Text">
+      <a name="text" val="1001"/>
+    </comp>
+    <comp lib="8" loc="(70,270)" name="Text">
+      <a name="text" val="0000"/>
+    </comp>
+    <comp lib="8" loc="(70,420)" name="Text">
       <a name="text" val="0010"/>
     </comp>
     <comp lib="8" loc="(70,660)" name="Text">
       <a name="text" val="0101"/>
     </comp>
-    <comp lib="8" loc="(71,271)" name="Text">
-      <a name="text" val="0000"/>
-    </comp>
-    <comp lib="8" loc="(75,349)" name="Text">
+    <comp lib="8" loc="(75,345)" name="Text">
       <a name="text" val="0001"/>
     </comp>
+    <wire from="(1210,10)" to="(1210,130)"/>
     <wire from="(170,260)" to="(380,260)"/>
     <wire from="(170,340)" to="(380,340)"/>
     <wire from="(170,420)" to="(380,420)"/>
@@ -341,6 +393,7 @@
     <wire from="(430,760)" to="(790,760)"/>
     <wire from="(430,840)" to="(810,840)"/>
     <wire from="(430,920)" to="(830,920)"/>
+    <wire from="(610,10)" to="(1210,10)"/>
     <wire from="(770,600)" to="(770,630)"/>
     <wire from="(770,630)" to="(850,630)"/>
     <wire from="(770,650)" to="(770,680)"/>
@@ -366,7 +419,31 @@
     <a name="circuit" val="Problem1B"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="8" loc="(215,20)" name="Text">
+    <comp lib="0" loc="(250,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(250,240)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(250,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Cin"/>
+    </comp>
+    <comp lib="0" loc="(850,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="O"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(850,260)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Cout"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="8" loc="(230,25)" name="Text">
       <a name="text" val="8-bit full adder with only AND, OR, and NOT. Label I/O."/>
     </comp>
   </circuit>
@@ -384,17 +461,182 @@
     <a name="circuit" val="Problem2"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(200,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(200,240)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(200,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="C"/>
+    </comp>
+    <comp lib="0" loc="(200,320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="0" loc="(470,660)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="O"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(260,450)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="4"/>
+      <a name="negate2" val="true"/>
+      <a name="negate3" val="true"/>
+    </comp>
+    <comp lib="1" loc="(330,450)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="4"/>
+      <a name="negate1" val="true"/>
+      <a name="negate3" val="true"/>
+    </comp>
+    <comp lib="1" loc="(400,450)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="4"/>
+      <a name="negate0" val="true"/>
+      <a name="negate3" val="true"/>
+    </comp>
+    <comp lib="1" loc="(470,450)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="4"/>
+      <a name="negate1" val="true"/>
+      <a name="negate2" val="true"/>
+    </comp>
+    <comp lib="1" loc="(470,610)" name="OR Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="7"/>
+      <a name="size" val="70"/>
+    </comp>
+    <comp lib="1" loc="(540,450)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="4"/>
+      <a name="negate0" val="true"/>
+      <a name="negate2" val="true"/>
+    </comp>
+    <comp lib="1" loc="(610,450)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="4"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="1" loc="(680,450)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="8" loc="(128,200)" name="Text">
+      <a name="text" val="8"/>
+    </comp>
+    <comp lib="8" loc="(128,278)" name="Text">
+      <a name="text" val="2"/>
+    </comp>
+    <comp lib="8" loc="(129,239)" name="Text">
+      <a name="text" val="4"/>
+    </comp>
+    <comp lib="8" loc="(129,321)" name="Text">
+      <a name="text" val="1"/>
+    </comp>
     <comp lib="8" loc="(450,20)" name="Text">
       <a name="text" val="4-bit input, output 1 if input is divisible by 3 or 5 when converted to decimal. Provide a truth table not in the .circ."/>
     </comp>
+    <wire from="(200,200)" to="(280,200)"/>
+    <wire from="(200,240)" to="(270,240)"/>
+    <wire from="(200,280)" to="(250,280)"/>
+    <wire from="(200,320)" to="(240,320)"/>
+    <wire from="(240,320)" to="(240,400)"/>
+    <wire from="(240,320)" to="(310,320)"/>
+    <wire from="(250,280)" to="(250,400)"/>
+    <wire from="(250,280)" to="(320,280)"/>
+    <wire from="(260,450)" to="(260,540)"/>
+    <wire from="(260,540)" to="(440,540)"/>
+    <wire from="(270,240)" to="(270,390)"/>
+    <wire from="(270,240)" to="(340,240)"/>
+    <wire from="(280,200)" to="(280,390)"/>
+    <wire from="(280,200)" to="(350,200)"/>
+    <wire from="(310,320)" to="(310,400)"/>
+    <wire from="(310,320)" to="(380,320)"/>
+    <wire from="(320,280)" to="(320,390)"/>
+    <wire from="(320,280)" to="(390,280)"/>
+    <wire from="(330,450)" to="(330,530)"/>
+    <wire from="(330,530)" to="(450,530)"/>
+    <wire from="(340,240)" to="(340,400)"/>
+    <wire from="(340,240)" to="(410,240)"/>
+    <wire from="(350,200)" to="(350,390)"/>
+    <wire from="(350,200)" to="(420,200)"/>
+    <wire from="(380,320)" to="(380,390)"/>
+    <wire from="(380,320)" to="(450,320)"/>
+    <wire from="(390,280)" to="(390,400)"/>
+    <wire from="(390,280)" to="(460,280)"/>
+    <wire from="(400,450)" to="(400,520)"/>
+    <wire from="(400,520)" to="(460,520)"/>
+    <wire from="(410,240)" to="(410,400)"/>
+    <wire from="(410,240)" to="(480,240)"/>
+    <wire from="(420,200)" to="(420,390)"/>
+    <wire from="(420,200)" to="(490,200)"/>
+    <wire from="(450,320)" to="(450,400)"/>
+    <wire from="(450,320)" to="(520,320)"/>
+    <wire from="(450,530)" to="(450,540)"/>
+    <wire from="(460,280)" to="(460,390)"/>
+    <wire from="(460,280)" to="(530,280)"/>
+    <wire from="(460,520)" to="(460,540)"/>
+    <wire from="(470,450)" to="(470,540)"/>
+    <wire from="(470,610)" to="(470,660)"/>
+    <wire from="(480,240)" to="(480,390)"/>
+    <wire from="(480,240)" to="(550,240)"/>
+    <wire from="(480,520)" to="(480,540)"/>
+    <wire from="(480,520)" to="(540,520)"/>
+    <wire from="(490,200)" to="(490,400)"/>
+    <wire from="(490,200)" to="(560,200)"/>
+    <wire from="(490,530)" to="(490,540)"/>
+    <wire from="(490,530)" to="(610,530)"/>
+    <wire from="(500,540)" to="(680,540)"/>
+    <wire from="(520,320)" to="(520,390)"/>
+    <wire from="(520,320)" to="(590,320)"/>
+    <wire from="(530,280)" to="(530,400)"/>
+    <wire from="(530,280)" to="(600,280)"/>
+    <wire from="(540,450)" to="(540,520)"/>
+    <wire from="(550,240)" to="(550,390)"/>
+    <wire from="(550,240)" to="(620,240)"/>
+    <wire from="(560,200)" to="(560,400)"/>
+    <wire from="(560,200)" to="(630,200)"/>
+    <wire from="(590,320)" to="(590,390)"/>
+    <wire from="(590,320)" to="(660,320)"/>
+    <wire from="(600,280)" to="(600,390)"/>
+    <wire from="(600,280)" to="(670,280)"/>
+    <wire from="(610,450)" to="(610,530)"/>
+    <wire from="(620,240)" to="(620,400)"/>
+    <wire from="(620,240)" to="(690,240)"/>
+    <wire from="(630,200)" to="(630,400)"/>
+    <wire from="(630,200)" to="(700,200)"/>
+    <wire from="(660,320)" to="(660,400)"/>
+    <wire from="(670,280)" to="(670,400)"/>
+    <wire from="(680,450)" to="(680,540)"/>
+    <wire from="(690,240)" to="(690,400)"/>
+    <wire from="(700,200)" to="(700,400)"/>
   </circuit>
   <circuit name="Problem3">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Problem3"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="8" loc="(5,20)" name="Text">
+    <comp lib="8" loc="(362,29)" name="Text">
       <a name="text" val="design a 4-bit ALU, 3 select lines for 8 operations, 2 input bits + the carry, 1 output + carry"/>
     </comp>
+  </circuit>
+  <circuit name="OneBitAdder">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="OneBitAdder"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+  </circuit>
+  <circuit name="OneBitDLatch">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="OneBitDLatch"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
   </circuit>
 </project>
